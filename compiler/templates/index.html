@@ -1,0 +1,62 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Compiler</title>
+    <link rel="stylesheet"  href="{% static 'index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+
+        </div>
+        <div class="code-option-container">
+            <div class="code-options">
+                <button>Upload</button>
+                <button>light</button>
+            </div>
+            <div>
+                <div class="upload-code-file">
+                    <form>
+                        <input type="file" name="file" id="file">
+                        <button type="submit" name="submit" id="submit">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="code-container">
+            <div>
+                <form>
+                    <input type="textarea" name="code" id="code">
+                    <button type="submit" id="compile">Compile</button>
+                </form>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="output-options">
+                <button>Upload</button>
+                <button>Output</button>
+                <button>input</button>
+            </div>
+            <div class="output">
+                <div class="upload-input-file">
+                    <form>
+                        <input type="file" name="file" id="file">
+                        <button type="submit" name="submit" id="submit">Upload</button>
+                    </form>
+                </div>
+                <div class="take-input">
+                    <form>
+                        <input type="textarea" name="input" id="input">
+                        <button type="submit" id="run">Run</button>
+                    </form>
+                </div>
+                <div class="display-output">
+
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
